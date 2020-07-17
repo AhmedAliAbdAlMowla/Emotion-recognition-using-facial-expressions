@@ -64,7 +64,7 @@ def video():
     
         cv2.imshow('live', frameClone)
     
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if (cv2.waitKey(2000) & 0xFF == ord('q')):
             break
     
     cap.release()
